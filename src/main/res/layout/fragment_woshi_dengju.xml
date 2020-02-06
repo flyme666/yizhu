@@ -8,87 +8,141 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
-            android:layout_width="110dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/background_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/dianshideng"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/button_circle_notselect"
-                android:scaleType="center"
-                android:src="@drawable/button_off">
-            </ImageButton>
-
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="电视灯">
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="110dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/background_linearlayout"
-            android:orientation="vertical">
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/background_linearlayout"
+                    android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/dingdeng"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:scaleType="center"
-                android:src="@drawable/button_off"
-                android:background="@drawable/button_circle_notselect">
-            </ImageButton>
+                    <ImageButton
+                        android:id="@+id/dianshideng"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_circle_notselect"
+                        android:scaleType="center"
+                        android:src="@drawable/button_off">
+                    </ImageButton>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="顶灯">
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="110dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="260dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/background_linearlayout"
-            android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="电视灯">
+                    </TextView>
+                </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/bideng"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:scaleType="center"
-                android:src="@drawable/button_off"
-                android:background="@drawable/button_circle_notselect">
-            </ImageButton>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="壁灯">
-            </TextView>
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/background_linearlayout"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/dingdeng"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_circle_notselect"
+                        android:scaleType="center"
+                        android:src="@drawable/button_off">
+                    </ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="顶灯">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/background_linearlayout"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/bideng"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:scaleType="center"
+                        android:src="@drawable/button_off"
+                        android:background="@drawable/button_circle_notselect">
+                    </ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="壁灯">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.evan.demo.yizhu.VerticalProgressBar
+                    android:id="@+id/vp_progress"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="170dp"
+
+                    android:layout_centerInParent="true" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sun"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:id="@+id/liangdu">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="亮度">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
+
     </RelativeLayout>
+
 
 </FrameLayout>

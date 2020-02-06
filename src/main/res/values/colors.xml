@@ -10,4 +10,5 @@
     <color name="theme">#40934A</color>
     <color name="white">#F2F2F2</color>
     <color name="bottom_navigation_normal">#CCCCCC</color>
+    <color name="gary">#D6D6D6</color>
 </resources>

@@ -2,24 +2,32 @@ package com.evan.demo.yizhu.woshi_fragment;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.evan.demo.yizhu.R;
+import com.evan.demo.yizhu.VerticalProgressBar;
 
 public class woshi_dengju extends Fragment {
     private View rootView;
     private ImageButton dianshi;
     private ImageButton ding;
     private ImageButton bi;
+    private VerticalProgressBar vpProgressBar;
+    private TextView liangdu;
+
+    private Handler mhandler;
+
     private int flag = 0;
     private int flag1 = 0;
     private int flag2 = 0;
-
 
     @Override
     public void onAttach(Context context){
@@ -39,12 +47,25 @@ public class woshi_dengju extends Fragment {
         dianshi = (ImageButton)rootView.findViewById(R.id.dianshideng);
         ding = (ImageButton)rootView.findViewById(R.id.dingdeng);
         bi = (ImageButton)rootView.findViewById(R.id.bideng);
+        vpProgressBar = (VerticalProgressBar) rootView.findViewById(R.id.vp_progress);
+        liangdu = (TextView)rootView.findViewById(R.id.liangdu);
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
         //这里写逻辑代码
+        run();
+        mhandler = new Handler() {
+
+            //handleMessage为处理消息的方法
+            public void handleMessage (Message msg){
+                super.handleMessage(msg);
+                if (true) {
+                    liangdu.setText(msg.arg1 + "%");
+                }
+            }
+        };
         if(flag == 0 ){
             dianshi.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_circle_notselect));
             dianshi.setImageDrawable(getResources().getDrawable(R.drawable.button_off));
@@ -121,4 +142,24 @@ public class woshi_dengju extends Fragment {
             }
         });
     }
+
+    private void run() {
+        new Thread(){
+            public void run() {
+                try {
+                    for (int i= 0;i<=100;i++) {
+                        Thread.sleep(50);//休息50毫秒
+                        vpProgressBar.setProgress(i);//更新进度条进度
+                        Message msg = Message.obtain();
+                        msg.arg1 = i;//Message类有属性字段arg1、arg2、what...
+                        mhandler.sendMessage(msg);
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            };
+        }.start();
+    }
+
+
 }
