@@ -47,7 +47,7 @@ public class woshi_dengju extends Fragment {
         dianshi = (ImageButton)rootView.findViewById(R.id.dianshideng);
         ding = (ImageButton)rootView.findViewById(R.id.dingdeng);
         bi = (ImageButton)rootView.findViewById(R.id.bideng);
-        vpProgressBar = (VerticalProgressBar) rootView.findViewById(R.id.vp_progress);
+//        vpProgressBar = (VerticalProgressBar) rootView.findViewById(R.id.vp_progress);
         liangdu = (TextView)rootView.findViewById(R.id.liangdu);
     }
 
@@ -55,17 +55,17 @@ public class woshi_dengju extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
         //这里写逻辑代码
-        run();
-        mhandler = new Handler() {
-
-            //handleMessage为处理消息的方法
-            public void handleMessage (Message msg){
-                super.handleMessage(msg);
-                if (true) {
-                    liangdu.setText(msg.arg1 + "%");
-                }
-            }
-        };
+//        run();
+//        mhandler = new Handler() {
+//
+//            //handleMessage为处理消息的方法
+//            public void handleMessage (Message msg){
+//                super.handleMessage(msg);
+//                if (true) {
+//                    liangdu.setText(msg.arg1 + "%");
+//                }
+//            }
+//        };
         if(flag == 0 ){
             dianshi.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_circle_notselect));
             dianshi.setImageDrawable(getResources().getDrawable(R.drawable.button_off));
@@ -143,23 +143,23 @@ public class woshi_dengju extends Fragment {
         });
     }
 
-    private void run() {
-        new Thread(){
-            public void run() {
-                try {
-                    for (int i= 0;i<=100;i++) {
-                        Thread.sleep(50);//休息50毫秒
-                        vpProgressBar.setProgress(i);//更新进度条进度
-                        Message msg = Message.obtain();
-                        msg.arg1 = i;//Message类有属性字段arg1、arg2、what...
-                        mhandler.sendMessage(msg);
-                    }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            };
-        }.start();
-    }
+//    private void run() {
+//        new Thread(){
+//            public void run() {
+//                try {
+//                    for (int i= 0;i<=100;i++) {
+//                        Thread.sleep(50);//休息50毫秒
+//                        vpProgressBar.setProgress(i);//更新进度条进度
+//                        Message msg = Message.obtain();
+//                        msg.arg1 = i;//Message类有属性字段arg1、arg2、what...
+//                        mhandler.sendMessage(msg);
+//                    }
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            };
+//        }.start();
+//    }
 
 
 }
