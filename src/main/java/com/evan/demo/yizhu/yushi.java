@@ -60,6 +60,7 @@ public class yushi extends Fragment {
         //这里写逻辑代码
 
 //        mytab_woshi.setTabMode(TabLayout.MODE_FIXED);
+        myViewPager_yushi.setOffscreenPageLimit(2);
         mytab_yushi.addTab(mytab_yushi.newTab().setText(TitleList1.get(0)));
         mytab_yushi.addTab(mytab_yushi.newTab().setText(TitleList1.get(1)));
         mytab_yushi.addTab(mytab_yushi.newTab().setText(TitleList1.get(2)));
@@ -86,7 +87,7 @@ public class yushi extends Fragment {
         mytab_yushi.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                Toast.makeText(getActivity(),"this is item"+ (mytab_yushi.getSelectedTabPosition()), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(),"this is item"+ (mytab_yushi.getSelectedTabPosition()), Toast.LENGTH_SHORT).show();
                 switch (mytab_yushi.getSelectedTabPosition()){
                     case 0:
                         break;

@@ -104,24 +104,35 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-<!--                <com.evan.demo.yizhu.VerticalProgressBar-->
-<!--                    android:id="@+id/vp_progress"-->
+                <com.evan.demo.yizhu.VerticalProgressBar
+                    android:id="@+id/vp_progress"
+                    android:layout_width="84dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gary" />
+
+<!--                <com.evan.demo.yizhu.VerticalSeekBar2-->
+<!--                    android:id="@+id/vs_test_2"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="170dp"-->
+<!--                    android:layout_marginLeft="186dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:thumb="@null"-->
+<!--                    android:background="@drawable/seekbar_vertical"-->
+<!--                    >-->
+<!--                </com.evan.demo.yizhu.VerticalSeekBar2>-->
+
+<!--                <com.evan.demo.yizhu.VerticalSeekBar-->
+<!--                    android:id="@+id/seekbar"-->
 <!--                    android:layout_width="84dp"-->
 <!--                    android:layout_height="170dp"-->
 <!--                    android:layout_centerInParent="true"-->
 <!--                    android:layout_gravity="center"-->
 <!--                    android:layout_marginTop="20dp"-->
-<!--                    android:background="@color/gary" />-->
-                <com.evan.demo.yizhu.VerticalSeekBar2
-                    android:id="@+id/vs_test_2"
-                    android:layout_width="20dp"
-                    android:layout_height="170dp"
-                    android:layout_marginLeft="186dp"
-                    android:layout_marginTop="20dp"
-                    android:thumb="@null"
-                    android:background="@drawable/seekbar_vertical"
-                    >
-                </com.evan.demo.yizhu.VerticalSeekBar2>
+<!--                    android:background="@color/gary">-->
+<!--                </com.evan.demo.yizhu.VerticalSeekBar>-->
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

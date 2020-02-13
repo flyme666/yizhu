@@ -63,6 +63,7 @@ public class keting extends Fragment {
         //这里写逻辑代码
 
 //        mytab_woshi.setTabMode(TabLayout.MODE_FIXED);
+        myViewPager_keting.setOffscreenPageLimit(1);
         mytab_keting.addTab(mytab_keting.newTab().setText(TitleList1.get(0)));
         mytab_keting.addTab(mytab_keting.newTab().setText(TitleList1.get(1)));
         mytab_keting.addTab(mytab_keting.newTab().setText(TitleList1.get(2)));
@@ -90,7 +91,7 @@ public class keting extends Fragment {
         mytab_keting.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                Toast.makeText(getActivity(),"this is item"+ (mytab_keting.getSelectedTabPosition()), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(),"this is item"+ (mytab_keting.getSelectedTabPosition()), Toast.LENGTH_SHORT).show();
                 switch (mytab_keting.getSelectedTabPosition()){
                     case 0:
                         break;

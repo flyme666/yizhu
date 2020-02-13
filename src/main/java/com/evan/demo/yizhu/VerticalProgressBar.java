@@ -59,6 +59,7 @@ public class VerticalProgressBar extends View {
         super.onDraw(canvas);
     }
 
+
     /**
      * 拿到文字宽度
      *
