@@ -55,17 +55,19 @@ public class woshi_dengju extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
         //这里写逻辑代码
-        run();
-        mhandler = new Handler() {
-
-            //handleMessage为处理消息的方法
-            public void handleMessage (Message msg){
-                super.handleMessage(msg);
-                if (true) {
-                    liangdu.setText(msg.arg1 + "%");
-                }
-            }
-        };
+//        run();
+//        mhandler = new Handler() {
+//
+//            //handleMessage为处理消息的方法
+//            public void handleMessage (Message msg){
+//                super.handleMessage(msg);
+//                if (true) {
+//                    liangdu.setText(msg.arg1 + "%");
+//                }
+//            }
+//        };
+        vpProgressBar.setProgress(75);
+        liangdu.setText("75%");
         if(flag == 0 ){
             dianshi.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_circle_notselect));
             dianshi.setImageDrawable(getResources().getDrawable(R.drawable.button_off));
