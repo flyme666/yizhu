@@ -12,23 +12,24 @@
         android:layout_marginTop="0dp"
         android:scaleType="fitStart"
         android:layout_weight="1"
-        android:alpha="0.5"
         android:src="@drawable/xingqiu_img"
         />
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="130dp"
-        android:layout_height="600dp">
+        android:layout_marginTop="100dp"
+        android:layout_height="630dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="88dp"
+            android:layout_marginLeft="48dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
             android:text="贴心服务已准备好，等待您的入住">
         </TextView>
         <LinearLayout
             android:layout_width="393dp"
-            android:layout_height="250dp"
-            android:layout_marginTop="30dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/shape_corner_up"
             android:orientation="vertical">
             <LinearLayout
@@ -45,6 +46,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="#000"
                     android:textSize="20dp"
                     android:text="客房服务">
                 </TextView>
@@ -75,6 +77,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="#000"
                         android:text="智慧洗衣">
                     </TextView>
                 </LinearLayout>
@@ -94,6 +97,7 @@
                     </ImageButton>
                     <TextView
                         android:layout_marginTop="5dp"
+                        android:textColor="#000"
                         android:layout_width="wrap_content"
                         android:layout_gravity="center"
                         android:layout_height="wrap_content"
@@ -117,6 +121,7 @@
                     <TextView
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
+                        android:textColor="#000"
                         android:layout_gravity="center"
                         android:layout_height="wrap_content"
                         android:text="健身房">
@@ -140,6 +145,7 @@
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="#000"
                         android:layout_gravity="center"
                         android:text="会议室">
                     </TextView>
@@ -169,6 +175,7 @@
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="#000"
                         android:layout_gravity="center"
                         android:text="智慧猫眼">
                     </TextView>
@@ -184,12 +191,14 @@
                         android:layout_height="wrap_content"
                         android:background="#fff"
                         android:id="@+id/shouye_ardaohang"
+                        android:textColor="#000"
                         android:layout_gravity="center"
                         android:src="@drawable/ardaohang">
                     </ImageButton>
                     <TextView
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
+                        android:textColor="#000"
                         android:layout_gravity="center"
                         android:layout_height="wrap_content"
                         android:text="AR导航">
@@ -213,6 +222,7 @@
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="#000"
                         android:layout_height="wrap_content"
                         android:text="访客记录">
                     </TextView>
@@ -234,6 +244,7 @@
                     <TextView
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
+                        android:textColor="#000"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="酒店服务">
@@ -245,7 +256,7 @@
         <LinearLayout
             android:layout_width="393dp"
             android:layout_height="400dp"
-            android:layout_marginTop="290dp"
+            android:layout_marginTop="280dp"
             android:orientation="vertical"
             android:background="#fff">
             <LinearLayout
@@ -262,13 +273,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="#000"
                     android:textSize="20dp"
                     android:text="扫码进房">
                 </TextView>
             </LinearLayout>
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
                 android:layout_gravity="center"
                 android:src="@drawable/erweima_img">
 

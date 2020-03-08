@@ -9,9 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name="com.evan.demo.yizhu.MainActivity"
-          >
+        <activity android:name=".shouye.shouye_fuwu"></activity>
+        <activity android:name=".shouye.shouye_fangke" />
+        <activity android:name=".shouye.shouye_daohang" />
+        <activity android:name=".shouye.shouye_maoyan" />
+        <activity android:name=".shouye.shouye_huiyi" />
+        <activity android:name=".shouye.shouye_jianshen" />
+        <activity android:name=".shouye.shouye_jiucan" />
+        <activity android:name=".shouye.shouye_zhihuixiyi" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
