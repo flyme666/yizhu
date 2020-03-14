@@ -12,7 +12,7 @@
         android:layout_marginTop="0dp"
         android:scaleType="fitStart"
         android:layout_weight="1"
-        android:src="@drawable/xingqiu_img"
+        android:src="@drawable/zhihuimaoyan_img"
         />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -27,12 +27,65 @@
             android:id="@+id/maoyan_back">
         </ImageButton>
     </LinearLayout>
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="50dp"
-        android:text="智慧猫眼">
-    </TextView>
+        android:layout_marginTop="100dp"
+        android:layout_height="730dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="欢迎来到智慧猫眼">
+        </TextView>
+        <LinearLayout
+            android:layout_width="393dp"
+            android:layout_height="730dp"
+            android:layout_marginTop="50dp"
+
+            android:background="@drawable/shape_corner_up"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/maoyan"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/zhihuimaoyan">
+            </ImageView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:text="开启猫眼"
+                android:id="@+id/button_maoyan"
+                android:textColor="@color/theme"
+                android:background="@drawable/button_green_off">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/maoyan_linearLayout"
+            android:layout_marginTop="220dp"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/mytab_maoyan">
+            </android.support.design.widget.TabLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/myViewPager_maoyan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
 </RelativeLayout>
