@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".shouye.shouye_fuwu"></activity>
+        <activity android:name=".shouye.huiyishi_yuyue_shezhi"></activity>
+        <activity android:name=".shouye.huiyishi_fuwu" />
+        <activity android:name=".shouye.huiyishi_chazhao" />
+        <activity android:name=".shouye.huiyishi_wode" />
+        <activity android:name=".shouye.huiyishi_yuyue" />
+        <activity android:name=".shouye.shouye_fuwu" />
         <activity android:name=".shouye.shouye_fangke" />
         <activity android:name=".shouye.shouye_daohang" />
         <activity android:name=".shouye.shouye_maoyan" />
