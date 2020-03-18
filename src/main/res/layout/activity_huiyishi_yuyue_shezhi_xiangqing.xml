@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.evan.demo.yizhu.shouye.huiyishi_yuyue_shezhi">
+    tools:context="com.evan.demo.yizhu.shouye.huiyishi_yuyue_shezhi_xiangqing">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,56 +37,6 @@
             </TextView>
         </LinearLayout>
 
-
-        <LinearLayout
-            android:layout_width="360dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/huiyishi_zhongxing"
-            android:background="@drawable/background_linearlayout_theme">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="10dp"
-                android:layout_gravity="center"
-                android:src="@drawable/huiyishi_shezhi_img">
-            </ImageView>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textSize="20dp"
-                    android:textColor="#000"
-                    android:text="会议室位置：8楼A01">
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:text="会议容量：200人以内">
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12dp"
-                    android:textColor="#000"
-                    android:text="相关设备：投影仪1台、激光笔1只、话筒若干、绿化植物若干，办公文具,WIFI全覆盖。">
-                </TextView>
-            </LinearLayout>
-
-
-        </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,26 +52,16 @@
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
                     android:textColor="#000"
-                    android:text="会议开始时间">
+                    android:text="会议名称">
                 </TextView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
+                    android:layout_marginLeft="110dp"
                     android:textSize="20dp"
-                    android:textColor="#000"
-                    android:text="8月7日 18:00  >">
+                    android:text="益集团开年展望会">
                 </TextView>
             </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
-                android:textSize="12dp"
-                android:textColor="#000"
-                android:text="开始最早为9：00，最晚为18：00">
-            </TextView>
             <View
                 android:layout_width="370dp"
                 android:layout_height="3px"
@@ -145,26 +85,16 @@
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
                     android:textColor="#000"
-                    android:text="会议结束时间">
+                    android:text="负责人姓名">
                 </TextView>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
+                    android:layout_marginLeft="190dp"
                     android:textSize="20dp"
-                    android:textColor="#000"
-                    android:text="8月7日 20:00  >">
+                    android:text="陈一一">
                 </TextView>
             </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
-                android:textSize="12dp"
-                android:textColor="#000"
-                android:text="2小时起约，结束时间最晚为23：00">
-            </TextView>
             <View
                 android:layout_width="370dp"
                 android:layout_height="3px"
@@ -173,106 +103,168 @@
                 android:background="@color/theme">
             </View>
         </LinearLayout>
-        <TextView
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:text="负责人联系方式">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:textSize="20dp"
+                    android:text="13435654488">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="370dp"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/theme">
+            </View>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:text="负责人工作单位">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="20dp"
+                    android:text="益集团">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="370dp"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/theme">
+            </View>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:text="负责人职位">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="210dp"
+                    android:textSize="20dp"
+                    android:text="COO">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="370dp"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/theme">
+            </View>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:text="会议其他需求">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="210dp"
+                    android:textSize="20dp"
+                    android:text="无">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="370dp"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/theme">
+            </View>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:textSize="20dp"
-            android:textColor="#000"
-            android:text="附加服务">
-        </TextView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:textSize="18dp"
-                    android:textColor="#000"
-                    android:text="会议用水">
-                </TextView>
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:checked="true"
-                    android:layout_gravity="right">
-                </CheckBox>
-            </LinearLayout>
-            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="是否公开会议">
+            </TextView>
+            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:textSize="18dp"
-                    android:textColor="#000"
-                    android:text="会议用餐">
-                </TextView>
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:layout_gravity="right">
-                </CheckBox>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:textSize="18dp"
-                    android:textColor="#000"
-                    android:text="下午茶">
-                </TextView>
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:layout_gravity="right">
-                </CheckBox>
-            </LinearLayout>
+                android:layout_marginRight="20dp"
+                android:layout_gravity="right">
+            </CheckBox>
         </LinearLayout>
+
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="180dp"
             android:orientation="vertical"
             android:background="#fff"
             android:elevation="3dp"
             android:layout_height="match_parent">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:textColor="#000"
-                android:textSize="20dp"
-                android:text="1.  200人会议室定金                      ￥1000">
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:textColor="#000"
-                android:textSize="20dp"
-                android:text="2.  200人会议室用水                      ￥500">
-            </TextView>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
@@ -292,10 +284,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="180dp"
                     android:layout_marginTop="30dp"
-                    android:id="@+id/huiyishi_shezhi_xiayibu"
+                    android:id="@+id/huiyishi_shezhi_quzhifu"
                     android:background="@drawable/button_green_on"
                     android:textColor="#fff"
-                    android:text="下一步">
+                    android:text="去支付">
                 </Button>
 
             </LinearLayout>
@@ -306,5 +298,4 @@
 
 
     </LinearLayout>
-
 </RelativeLayout>
