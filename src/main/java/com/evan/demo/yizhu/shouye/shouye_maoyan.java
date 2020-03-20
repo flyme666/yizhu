@@ -68,6 +68,7 @@ public class shouye_maoyan extends AppCompatActivity {
                     button_maoyao.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_green_off));
                     button_maoyao.setTextColor(Color.rgb(64,147,74));
                     maoyan.setImageResource(R.drawable.zhihuimaoyan);
+                    button_maoyao.setText("开启猫眼");
                     params.setMargins(0, 600, 0, 0);
                     searchViewContainer.setLayoutParams(params);
                     flag1 = 0;
@@ -75,6 +76,7 @@ public class shouye_maoyan extends AppCompatActivity {
                     button_maoyao.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_green_on));
                     button_maoyao.setTextColor(Color.rgb(255,255,255));
                     maoyan.setImageResource(R.drawable.zhihuimaoyan_on);
+                    button_maoyao.setText("关闭猫眼");
                     params.setMargins(0, 1200, 0, 0);
                     searchViewContainer.setLayoutParams(params);
                     flag1 = 1;
