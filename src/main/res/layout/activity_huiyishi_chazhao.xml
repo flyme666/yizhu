@@ -151,6 +151,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="30dp"
                         android:background="@drawable/button_green_off"
+                        android:id="@+id/huiyi_chazhao_btn1"
                         android:text="立即报名">
                     </Button>
                 </LinearLayout>
@@ -239,6 +240,7 @@ ASIA 摄影展">
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="60dp"
                         android:background="@drawable/button_green_off"
+                        android:id="@+id/huiyi_chazhao_btn2"
                         android:text="立即报名">
                     </Button>
                 </LinearLayout>
@@ -326,6 +328,7 @@ ASIA 摄影展">
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="30dp"
                         android:background="@drawable/button_green_off"
+                        android:id="@+id/huiyi_chazhao_btn3"
                         android:text="立即报名">
                     </Button>
                 </LinearLayout>
@@ -413,6 +416,7 @@ ASIA 摄影展">
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="30dp"
                         android:background="@drawable/button_green_off"
+                        android:id="@+id/huiyi_chazhao_btn4"
                         android:text="立即报名">
                     </Button>
                 </LinearLayout>
