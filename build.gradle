@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.evan.demo.bottomnavigationdemo"
         minSdkVersion 15
@@ -29,5 +29,6 @@ dependencies {
 
     // design
     implementation 'com.android.support:design:27.1.1'
+    implementation 'anylife.scrolltextview:ScrollTextviewLib:1.4.6'
 
 }
