@@ -82,7 +82,8 @@
                         android:layout_width="20dp"
                         android:layout_height="70dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/button_green_off"
+                        android:background="@drawable/button_green_on"
+                        android:textColor="#fff"
                         android:text="全部">
 
                     </Button>
@@ -93,6 +94,7 @@
                         android:layout_height="70dp"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/button_green_off"
+                        android:textColor="@color/theme"
                         android:text="申请">
 
                     </Button>
@@ -103,6 +105,7 @@
                         android:layout_height="70dp"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/button_green_off"
+                        android:textColor="@color/theme"
                         android:text="已处理">
 
                     </Button>

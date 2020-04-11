@@ -67,7 +67,7 @@
                     android:ellipsize="marquee"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
-                    android:text="请您在排队轮到后,在20分钟内开始洗衣,超时则重新排队.">
+                    android:text="请您在排队轮到后，在20分钟内开始洗衣，超时则重新排队。">
                 </TextView>
 
             </LinearLayout>
