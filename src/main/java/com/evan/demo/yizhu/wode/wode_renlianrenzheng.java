@@ -1,50 +1,42 @@
 package com.evan.demo.yizhu.wode;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.evan.demo.yizhu.R;
 
-public class wode_shimingrenzheng1 extends AppCompatActivity {
-
+public class wode_renlianrenzheng extends AppCompatActivity {
     private TextView tiaoguo;
     private Button back;
-    private Button next;
-
+    private Button save;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wode_shimingrenzheng1);
+        setContentView(R.layout.activity_wode_renlianrenzheng);
         tiaoguo = (TextView)findViewById(R.id.tiaoguo);
         back = (Button)findViewById(R.id.wode_back);
-        next = (Button)findViewById(R.id.shimingrenzheng_next);
-
+        save = (Button)findViewById(R.id.renlianrenzheng_save) ;
         tiaoguo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                wode_shimingrenzheng1.this.finish();
+                wode_renlianrenzheng.this.finish();
             }
         });
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                wode_shimingrenzheng1.this.finish();
+                wode_renlianrenzheng.this.finish();
             }
         });
-        next.setOnClickListener(new View.OnClickListener() {
+        save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(wode_shimingrenzheng1.this,com.evan.demo.yizhu.wode.wode_renlianrenzheng.class);
-                startActivity(i);
+                Toast.makeText(wode_renlianrenzheng.this,"保存成功",Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }
